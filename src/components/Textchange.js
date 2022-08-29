@@ -11,11 +11,11 @@ function Textchanged(props){
         setTextValue(event.target.value);
     }
     const toLowercaseFun=()=>{
-        let msg = new SpeechSynthesisUtterance();
-          msg.text = textValue;
-        window.speechSynthesis.speak(msg);
-        // const textlower = textValue.toLowerCase();
-        // setTextValue(textlower);
+        // let msg = new SpeechSynthesisUtterance();
+        //   msg.text = textValue;
+        // window.speechSynthesis.speak(msg);
+        const textlower = textValue.toLowerCase();
+        setTextValue(textlower);
     }
     const toReverseFun = ()=>{
        const str =textValue;
